@@ -7,7 +7,7 @@
     try
     {
         $pdo = new PDO($dsn,$dbuser,$dbpass);
-        echo "Conexão concluido com sucesso !  ";
+        echo "Conexão concluido com sucesso !  <br><br>";
         
         $sql = "SELECT * FROM posts";
         $dado = $pdo->query($sql);

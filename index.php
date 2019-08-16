@@ -14,7 +14,11 @@
         
         if ($dado->rowCount() > 0)
         {
-            echo "Há posts cadastrados";
+            echo "Há posts cadastrados ";
+            foreach($dado->fetchAll()as $post)
+            {
+                echo "<p>Título: ".$post['titulo']."<br>";
+            }
         }
         else
         {
